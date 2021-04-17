@@ -1,0 +1,6 @@
+{
+  "build": { "dockerfile": "../docker/dev.dockerfile" },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/nueron/app,type=bind,consistency=delegated",
+  "workspaceFolder": "/home/nueron/app",
+  "postCreateCommand": "bash .devcontainer/install-dev-tools.sh"
+}
